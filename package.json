@@ -5,6 +5,7 @@
   "main": "server.js",
   "scripts": {
     "start": "node src/server.js",
+    "dev": "nodemon src/server.js -e js liquid",
     "test": "mocha src/tests/*.js --exit",
     "lint": "eslint .",
     "fix": "eslint . --fix"
@@ -25,6 +26,7 @@
     "cors": "^2.8.5",
     "express": "^4.17.1",
     "helmet": "^4.6.0",
+    "liquidjs": "^9.36.0",
     "morgan": "^1.10.0"
   },
   "devDependencies": {
@@ -36,6 +38,7 @@
     "eslint-plugin-jest": "^24.3.6",
     "eslint-plugin-node": "^11.1.0",
     "eslint-plugin-promise": "^5.1.0",
-    "mocha": "^9.0.2"
+    "mocha": "^9.0.2",
+    "nodemon": "^2.0.15"
   }
 }
